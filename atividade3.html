@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="conteiner">
+        <div class="leo">
+   <h2>Leo:</h2>
+   <span>Clique no Leo que o ele fale!</span>
+
+        <img src="./1.png" id="leo"onclick="clicar()" alt="Clique para falar">
+        </div>
+    <p class="instrucao">Escolha sua jogada para enfrentar o Leo:</p>
+        
+    <div class="opcoes">
+        <button class="btn_opcao" data-escolha="tesoura✌️" aria-label="Tesoura">✌️<span>Tesoura</span></button>
+        <button class="btn_opcao" data-escolha="papel✋" aria-label="Papel">✋<span>Pepal</span></button>
+        <button class="btn_opcao" data-escolha="pedra✊" aria-label="Pedra">✊<span>Pedra</span></button>
+
+    </div>
+
+     <section class="painel_resultado" aria-live="polite">
+            <div class="escolhas_exibicao">
+                <div>Você: <strong id="escolha_usuario">-</strong></div>
+                <div>Computador: <strong id="escolha_computador">-</strong></div>
+            </div>
+            <p id="mensagem_resultado" class="resultado_texto">Aguardando sua jogada...</p>
+            <div class="placar">
+                <span>Vitórias: <strong id="vitorias">0</strong></span>
+                <span>Empates: <strong id="empates">0</strong></span>
+                <span>Derrotas: <strong id="derrotas">0</strong></span>
+            </div>
+        </section>
+        <!-- Botão para reiniciar -->
+        <button id="btn_reiniciar" class="btn_reiniciar">Reiniciar Jogo</button>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>
